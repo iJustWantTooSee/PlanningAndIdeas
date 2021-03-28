@@ -20,8 +20,15 @@ namespace PlanningAndIdeas.Controllers
 
         public IActionResult Index()
         {
+          //  return View();
+            return RedirectToAction("Authorization");
+        }
+
+        public IActionResult Authorization()
+        {
             return View();
         }
+
 
         public IActionResult Privacy()
         {
