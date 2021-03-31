@@ -79,7 +79,9 @@ div.desktop > div.background {
   background-image: url("../image/krasivyy_kot-2560x1600.jpg");
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  border-radius: 8px;
+  margin-top: 10px; }
 
 div.desktop > div.background > h4 {
   position: absolute;
