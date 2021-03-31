@@ -1,0 +1,33 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Header css*/
+
+header {
+    height: 40px;
+    width: 100%;
+    background-image: url(images/overlay2.png), url(images/overlay3.svg), linear-gradient( 45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    font-size: 21px;
+    line-height: 40px
+}
+
+.logo {
+    float: left;
+    margin-left: 5%;
+}
+
+.profile {
+    float: right;
+    margin-right: 5%;
+    background-color: #C4C4C4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
