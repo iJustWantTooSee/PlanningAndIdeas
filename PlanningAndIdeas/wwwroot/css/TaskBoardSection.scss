@@ -8,7 +8,7 @@ body, html {
     background-color: #e7f0ff;
 }
 
-/* Header css*/
+// Header css
 
 header {
     height: 40px;
@@ -36,11 +36,11 @@ header {
     text-align: center;
 }
 
-/*Content*/
+//Content
 
 main {
     width: 100%;
-    position: relative;
+    position: sticky;
     min-height: calc(100% - 40px);
 }
 
@@ -80,16 +80,12 @@ li:hover {
     cursor: pointer;
 }
 
-/*Container with center-content and right-content*/
+//Container with center-content and right-content
 
-.center-content {
-    width: 100%;
 
-}
 
 .right-content {
     width: 100%;
-    
 }
 
 main.row {
@@ -105,6 +101,10 @@ main.row {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 div.create-task a {
@@ -116,7 +116,7 @@ div.create-task a {
 
 div.list-priority-task {
     width: 100%;
-    overflow:auto;
+    overflow: auto;
     background-color: white;
     border-radius: 10px;
 }
@@ -124,7 +124,7 @@ div.list-priority-task {
 div.list-priority-task div.title h5 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     float: left;
-    color:black;
+    color: black;
 }
 
 div.list-priority-task div.title a {
@@ -134,6 +134,57 @@ div.list-priority-task div.title a {
     clear: left;
 }
 
-div.tasks div.card{
-    width:100%;
+div.tasks div.card {
+    width: 100%;
+}
+
+
+//Center content
+.center-content {
+    width: 100%;
+
+
+    img {
+        width: 100%;
+        height: 250px;
+    }
+
+    div.d-flex {
+        width: 100%;
+    }
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        background-color: white;
+        min-height: 100%;
+        width: 100%;
+        margin-left: -15px;
+        top: 0;
+        box-sizing: border-box;
+        z-index: -1;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .task {
+        padding: 8px;
+        margin: 0 auto;
+        width: 95%;
+        background-color: #EDBBBB;
+        border-radius: 10px;
+
+        .confirm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 40px;
+            background-color: white;
+        }
+
+        .endDate {
+            align-self: flex-end;
+        }
+    }
 }

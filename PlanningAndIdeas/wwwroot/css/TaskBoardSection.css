@@ -6,7 +6,6 @@ body, html {
   height: 100%;
   background-color: #e7f0ff; }
 
-/* Header css*/
 header {
   height: 40px;
   width: 100%;
@@ -30,10 +29,9 @@ header {
   border-radius: 50%;
   text-align: center; }
 
-/*Content*/
 main {
   width: 100%;
-  position: relative;
+  position: sticky;
   min-height: calc(100% - 40px); }
 
 nav {
@@ -66,10 +64,6 @@ li:hover {
   background-position: top right, center center, center center;
   cursor: pointer; }
 
-/*Container with center-content and right-content*/
-.center-content {
-  width: 100%; }
-
 .right-content {
   width: 100%; }
 
@@ -85,6 +79,8 @@ main.row {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .create-task:hover {
+    cursor: pointer; }
 
 div.create-task a {
   font-size: 18px;
@@ -111,3 +107,38 @@ div.list-priority-task div.title a {
 
 div.tasks div.card {
   width: 100%; }
+
+.center-content {
+  width: 100%; }
+  .center-content img {
+    width: 100%;
+    height: 250px; }
+  .center-content div.d-flex {
+    width: 100%; }
+  .center-content:after {
+    content: ' ';
+    position: absolute;
+    background-color: white;
+    min-height: 100%;
+    width: 100%;
+    margin-left: -15px;
+    top: 0;
+    box-sizing: border-box;
+    z-index: -1;
+    border-radius: 20px 20px 0px 0px; }
+  .center-content .task {
+    padding: 8px;
+    margin: 0 auto;
+    width: 95%;
+    background-color: #EDBBBB;
+    border-radius: 10px; }
+    .center-content .task .confirm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      min-width: 40px;
+      border-radius: 40px;
+      background-color: white; }
+    .center-content .task .endDate {
+      align-self: flex-end; }
