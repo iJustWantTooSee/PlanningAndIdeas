@@ -1,0 +1,190 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    background-color: #e7f0ff;
+}
+
+// Header css
+
+header {
+    height: 40px;
+    width: 100%;
+    background-image: url(images/overlay2.png), url(images/overlay3.svg), linear-gradient( 45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    font-size: 21px;
+    line-height: 40px
+}
+
+.logo {
+    margin-left: 5%;
+    float: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 40px;
+}
+
+.profile {
+    float: right;
+    margin-right: 5%;
+    background-color: #C4C4C4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+//Content
+
+main {
+    width: 100%;
+    position: sticky;
+    min-height: calc(100% - 40px);
+}
+
+nav {
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    background-color: #C3CCDC;
+    height: 30px;
+    max-width: 190px;
+    min-width: 130px;
+    border-radius: 10px;
+    border: 1px solid #8197BE;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover {
+    background-image: url(images/overlay2.png), url(images/overlay3.svg), linear-gradient( 135deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top right, center center, center center;
+    cursor: pointer;
+}
+
+//Container with center-content and right-content
+
+
+
+.right-content {
+    width: 100%;
+}
+
+main.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.create-task {
+    width: 100%;
+    height: 50px;
+    background-color: #7054F0;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+div.create-task a {
+    font-size: 18px;
+    text-align: center;
+    color: white !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.list-priority-task {
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.list-priority-task div.title h5 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: left;
+    color: black;
+}
+
+div.list-priority-task div.title a {
+    float: left;
+    color: #7054F0 !important;
+    padding: 0px !important;
+    clear: left;
+}
+
+div.tasks div.card {
+    width: 100%;
+}
+
+
+//Center content
+.center-content {
+    width: 100%;
+
+
+    img {
+        width: 100%;
+        height: 250px;
+    }
+
+    div.d-flex {
+        width: 100%;
+    }
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        background-color: white;
+        min-height: 100%;
+        width: 100%;
+        margin-left: -15px;
+        top: 0;
+        box-sizing: border-box;
+        z-index: -1;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .task {
+        padding: 8px;
+        margin: 0 auto;
+        width: 95%;
+        background-color: #EDBBBB;
+        border-radius: 10px;
+
+        .confirm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 40px;
+            background-color: white;
+        }
+
+        .endDate {
+            align-self: flex-end;
+        }
+    }
+}
