@@ -37,9 +37,11 @@ header {
 }
 
 // Content
+$layer: 10000;
 
 main {
-    width: 100%;
+    margin: 0 auto !important;
+    width: 90%;
     position: relative;
     min-height: calc(100% - 40px);
 }
@@ -80,6 +82,34 @@ li:hover {
     background-image: url(images/overlay2.png), url(images/overlay3.svg), linear-gradient( 135deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
     background-position: top right, center center, center center;
     cursor: pointer;
+}
+
+//center content
+
+.center-content {
+    width: 100%;
+    z-index: $layer;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        background-color: white;
+        min-height: 100%;
+        width: 100%;
+        margin-left: -15px;
+        top: 0;
+        box-sizing: border-box;
+        z-index: -$layer;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .card {
+        width: 9rem;
+    }
+
+    .col{
+        flex-grow:0;
+    }
 }
 
 
